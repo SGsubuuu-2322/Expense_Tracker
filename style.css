@@ -101,6 +101,10 @@ input[type="number"] {
 .btn:focus {
   outline: none;
 }
+.btn:active {
+  background-color: #3ba7fa;
+  transform: scale(0.98);
+}
 
 .list {
   list-style-type: none;
