@@ -97,3 +97,46 @@ input[type="number"] {
   margin: 10px 0 30px;
   font-size: 16px;
 }
+
+.list {
+  list-style-type: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.list li.plus {
+  border-right: 6px solid #2ecc71;
+}
+.list li.minus {
+  border-right: 6px solid #c0392b;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: 0;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
